@@ -1,0 +1,13 @@
+.App {
+  max-width: 100vh;
+  height: 100vh;
+}
+
+.header-title {
+  color: white;
+
+  text-align: center;
+
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
