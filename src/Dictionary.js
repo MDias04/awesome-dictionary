@@ -3,7 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 
 import { FaSearch } from "react-icons/fa";
-import "./Dictionary.css";
+import "./styles/Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
