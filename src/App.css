@@ -1,5 +1,4 @@
 .App {
-  height: 100vh;
   margin: 0 auto;
   background-color: #212529 !important;
   color: white;
@@ -17,7 +16,6 @@
 
 .App-footer {
   text-align: center;
-  margin: 100px 0;
 }
 
 .footer-text {
