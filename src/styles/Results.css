@@ -1,0 +1,16 @@
+.Results {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.word-result {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.meaning-result {
+  text-transform: capitalize;
+  width: 500px;
+}

@@ -12,6 +12,8 @@
   justify-content: center;
 }
 
+/* HEADER ANIMATION START */
+
 .header-title {
   width: 9ch;
   /*Typing Animation*/
@@ -35,6 +37,8 @@
     border-color: transparent;
   }
 }
+
+/* HEADER ANIMATION END */
 
 .App-footer {
   position: absolute;
