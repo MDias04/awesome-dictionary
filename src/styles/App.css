@@ -15,6 +15,7 @@
 /* HEADER ANIMATION START */
 
 .header-title {
+  margin: 30px 0;
   width: 9ch;
   /*Typing Animation*/
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
