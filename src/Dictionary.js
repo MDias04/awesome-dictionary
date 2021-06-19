@@ -26,18 +26,22 @@ export default function Dictionary() {
   }
 
   return (
-    <div className="wrap">
-      <form className="dictionary-search" onSubmit={search}>
-        <input
-          className="search-bar"
-          type="search"
-          placeholder="What is the word?"
-          onChange={handleKeyword}
-        />
-        <button className="search-btn">
-          <FaSearch />
-        </button>
-      </form>
+    <div className="wrap-dictionary">
+      <section className="search-form">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            placeholder="What is the word?"
+            onChange={handleKeyword}
+          />
+          <button>
+            <FaSearch />
+          </button>
+        </form>
+        <div className="hint">
+          <strong>Suggested Words:</strong> Sunset, Apple{" "}
+        </div>
+      </section>
       <Results results={results} />
     </div>
   );

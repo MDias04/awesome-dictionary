@@ -1,9 +1,7 @@
-.App {
-  height: 100vh;
-  margin: 0 auto;
-
+body {
   background-color: #212529 !important;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-header {
@@ -24,7 +22,6 @@
   border-right: 3px solid;
 
   font-size: 5rem;
-  font-family: "Poppins", sans-serif;
 }
 
 @keyframes typing {
@@ -49,7 +46,6 @@
 
 .footer-text {
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
   font-style: italic;
   font-weight: 700;
 }
