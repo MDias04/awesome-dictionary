@@ -1,0 +1,11 @@
+.Meaning .--word {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.Meaning .example {
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}

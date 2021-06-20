@@ -1,5 +1,5 @@
 .wrap-dictionary {
-  width: 70%;
+  width: 30%;
   height: 20%;
   position: absolute;
   top: 30%;
@@ -11,8 +11,6 @@
 
 .wrap-dictionary section {
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 10px 10px rgba(128, 128, 128, 0.2);
   margin: 20px 0;
 }
 
@@ -52,4 +50,5 @@
   margin-top: 10px;
   color: #b1b1b1;
   font-style: italic;
+  letter-spacing: 1px;
 }
