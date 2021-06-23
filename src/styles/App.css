@@ -1,6 +1,18 @@
+/*Root will define my variables*/
+:root {
+  --clr-primary: #ee6352;
+  --clr-hint: #b1b1b1;
+
+  --clr-bg-dark: #212529;
+  --clr-bg-light: #ddd;
+
+  --clr-shadow: rgba(0, 0, 0, 0.15);
+  font-size: 100%;
+}
+
 body {
-  background-color: #212529 !important;
-  color: white;
+  background-color: var(--clr-bg-dark) !important;
+  color: var(--clr-bg-light);
   font-family: "Poppins", sans-serif;
 }
 

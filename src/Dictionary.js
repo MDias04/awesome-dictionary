@@ -30,12 +30,12 @@ export default function Dictionary() {
       <section className="search-form">
         <form onSubmit={search}>
           <input
-            className="search__input"
+            className="search_input"
             type="search"
             placeholder="What is the word?"
             onChange={handleKeyword}
           />
-          <button className="search__submit">
+          <button className="search_submit">
             <FaSearch />
           </button>
         </form>
