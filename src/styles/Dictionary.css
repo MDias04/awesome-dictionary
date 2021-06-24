@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-.search-form {
+.search_form {
   --size: 60px; /*Create a variable size for this form */
 
   border: 2px solid var(--clr-primary);
@@ -36,13 +36,14 @@ body {
 
 .search_input {
   border: 0;
+  padding: 0.7em 3em;
   flex-grow: 1;
   outline: 0;
   z-index: 2;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 60px;
+  left: 0;
   width: 100%;
   background: transparent;
   opacity: 0;
@@ -52,43 +53,42 @@ body {
 }
 
 .search_submit {
+  margin-left: auto; /*This will make the icon go with the search bar */
+
   font-size: 1.5rem;
-  margin-left: auto;
   background: 0;
   border: 0;
   cursor: pointer;
   border-radius: 50%;
 
-  transition: background 200ms ease-out;
   width: calc(var(--size) - 10px);
   height: calc(var(--size) - 10px);
   color: var(--clr-bg-light);
 }
 
-.search-form:focus-within {
+.search_form:focus-within {
   width: 100%;
 }
-.search_input {
+
+.search_form:focus-within .search_input {
   opacity: 1;
   z-index: initial;
   cursor: initial;
   width: calc(100% - var(--size));
 }
-
-.search_submit:hover {
+.search_form:focus-within .search_submit {
   background: var(--clr-primary);
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-
-  transform: rotate(1turn);
-  transition: transform 500ms ease-out;
 }
-.search_submit:focus {
+.search_form:focus-within .search_submit:hover,
+.search_form:focus-within .search_submit:focus {
   outline: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+  transform: rotate(1turn);
 }
 
-.wrap-dictionary .hint {
+.hint {
   margin-top: 15px;
   color: var(--clr-hint);
   font-style: italic;

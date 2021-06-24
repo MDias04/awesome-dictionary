@@ -13,12 +13,21 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
 
+  function handlePexelsResponse(response) {
+    console.log(response);
+  }
+
   function search(event) {
     event.preventDefault();
 
     //documentation here: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let pexelsApiKey =
+      "563492ad6f9170000100000178bfb0ca1fcd41d9a657113694069f73";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    axios.get(pexelsApiUrl).then(handlePexelsResponse);
   }
 
   function handleKeyword(event) {
@@ -27,7 +36,7 @@ export default function Dictionary() {
 
   return (
     <div className="wrap-dictionary">
-      <section className="search-form">
+      <div className="search_form">
         <form onSubmit={search}>
           <input
             className="search_input"
@@ -39,7 +48,7 @@ export default function Dictionary() {
             <FaSearch />
           </button>
         </form>
-      </section>
+      </div>
       <div className="hint">
         <strong>Suggested Words:</strong> Sunset, Apple
       </div>
