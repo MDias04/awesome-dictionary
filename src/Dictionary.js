@@ -12,7 +12,7 @@ export default function Dictionary() {
   let [photos, setPhotos] = useState(null);
 
   //Handles the dictionary
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
   //Handles the images
@@ -20,17 +20,21 @@ export default function Dictionary() {
     setPhotos(response.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     //documentation here: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
 
     let pexelsApiKey =
       "563492ad6f9170000100000178bfb0ca1fcd41d9a657113694069f73";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleKeyword(event) {
@@ -40,7 +44,7 @@ export default function Dictionary() {
   return (
     <div className="wrap-dictionary">
       <div className="search_form">
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <input
             className="search_input"
             type="search"
@@ -53,11 +57,16 @@ export default function Dictionary() {
         </form>
       </div>
       <div className="hint">
-        <strong>Suggested Words:</strong> Sunset, Apple
+        <strong>Suggested Words:</strong> Sunset, Apple ...
       </div>
 
-      <section>
+      <section className="results">
+        <br />
         <Results results={results} />
+        <br />
+        <br />
+      </section>
+      <section className="photos">
         <Photos photos={photos} />
       </section>
     </div>

@@ -11,6 +11,11 @@ body {
   align-items: center;
 }
 
+hr {
+  margin-top: 40px;
+  width: 40%;
+}
+
 .wrap-dictionary {
   width: 100vh;
   padding: 3em;
@@ -93,4 +98,8 @@ body {
   color: var(--clr-hint);
   font-style: italic;
   letter-spacing: 1px;
+}
+
+.results {
+  box-shadow: 0 1em 1em var(--clr-shadow);
 }

@@ -7,6 +7,7 @@ export default function Photos(props) {
     return (
       <section className="Photos">
         <div className="row">
+          <h4>Check out some amazing photos</h4>
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-6" key={index}>
@@ -19,7 +20,7 @@ export default function Photos(props) {
                   <img
                     src={photo.src.landscape}
                     className="img-fluid"
-                    alt={photo.photographer}
+                    alt={photo.src.photographer}
                   />
                 </a>
               </div>

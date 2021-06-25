@@ -2,3 +2,8 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+h4 {
+  margin: 20px auto;
+  color: var(--clr-primary);
+}

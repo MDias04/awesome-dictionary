@@ -2,10 +2,19 @@
   font-size: 2rem;
   line-height: 1.5;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .Meaning .example {
-  color: #888;
+  color: var(--clr-bg-light);
   font-style: italic;
   margin-top: 10px;
+}
+
+.example::first-letter {
+  text-transform: capitalize;
+}
+
+.synonyms {
+  margin: 30px auto;
 }

@@ -5,7 +5,8 @@
 }
 
 .Results h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.5;
+  text-transform: capitalize;
 }
