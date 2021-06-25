@@ -9,14 +9,14 @@ export default function Photos(props) {
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-8" key={index}>
+              <div className="col-6" key={index}>
                 <a
                   href={photo.src.original}
                   target="_blank"
                   rel="noreferrer"
                   className="photo-zoom"
                 >
-                  <img src={photo.src.original} className="img-fluid" />
+                  <img src={photo.src.landscape} className="img-fluid" />
                 </a>
               </div>
             );

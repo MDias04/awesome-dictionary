@@ -12,7 +12,7 @@ body {
 }
 
 .wrap-dictionary {
-  width: 70vh;
+  width: 100vh;
   padding: 3em;
   box-shadow: 0 1.2em 1em var(--clr-shadow);
   position: relative;
