@@ -17,7 +17,6 @@ body {
   padding: 3em;
   box-shadow: 0 1.2em 1em var(--clr-shadow);
   position: relative; 
-
 }
 
 .results, .photos {
