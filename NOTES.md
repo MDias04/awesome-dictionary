@@ -17,6 +17,4 @@
 
   - Make search icon go right with the search bar > [DONE] [HOWEVER NOT WORKING]
 
-  - When Esc is pressed and the search bar closes, close the results too
-
   - Change audio icon [DONE]
