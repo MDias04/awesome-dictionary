@@ -13,7 +13,7 @@
 
   - if(word-result exists) ? show results : prompt not available
 
-- style rest of the app
+- style rest of the app [ONGOING]
 
   - Make search icon go right with the search bar > [DONE] [HOWEVER NOT WORKING]
 

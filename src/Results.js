@@ -9,7 +9,6 @@ export default function Results(props) {
       <div className="Results">
         <section>
           <h1 className="word-result">{props.results.word}</h1>
-
           {props.results.phonetics.map(function (phonetic, index) {
             return (
               <div key={index}>
@@ -21,6 +20,7 @@ export default function Results(props) {
 
         {props.results.meanings.map(function (meaning, index) {
           return (
+            
             <section className="meaning-result" key={index}>
               <Meaning meaning={meaning} />
             </section>

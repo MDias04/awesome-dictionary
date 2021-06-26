@@ -56,15 +56,14 @@ export default function Dictionary() {
           </button>
         </form>
       </div>
+      
+     
       <div className="hint">
         <strong>Suggested Words:</strong> Sunset, Apple ...
       </div>
 
       <section className="results">
-        <br />
         <Results results={results} />
-        <br />
-        <br />
       </section>
       <section className="photos">
         <Photos photos={photos} />

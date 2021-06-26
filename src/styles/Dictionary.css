@@ -11,17 +11,21 @@ body {
   align-items: center;
 }
 
-hr {
-  margin-top: 40px;
-  width: 40%;
-}
 
 .wrap-dictionary {
-  width: 100vh;
+  width: 100%;
   padding: 3em;
   box-shadow: 0 1.2em 1em var(--clr-shadow);
-  position: relative;
+  position: relative; 
+
 }
+
+.results, .photos {
+  margin: 30px 0;
+}
+
+
+/* FORM INPUT STYLE */
 
 .search_form {
   --size: 60px; /*Create a variable size for this form */
@@ -37,6 +41,8 @@ hr {
 
   transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   padding: 3px;
+
+  margin: 30px 0;
 }
 
 .search_input {
@@ -91,15 +97,11 @@ hr {
   outline: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
   transform: rotate(1turn);
-}
+} 
 
 .hint {
-  margin-top: 15px;
+  margin-top: 2em;
   color: var(--clr-hint);
   font-style: italic;
   letter-spacing: 1px;
-}
-
-.results {
-  box-shadow: 0 1em 1em var(--clr-shadow);
 }
