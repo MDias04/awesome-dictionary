@@ -10,7 +10,7 @@ export default function Photos(props) {
           <h4>Check out some amazing photos</h4>
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-6" key={index}>
+              <div className="col-4" key={index}>
                 <a
                   href={photo.src.original}
                   target="_blank"

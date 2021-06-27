@@ -13,7 +13,7 @@ body {
 
 
 .wrap-dictionary {
-  width: 100%;
+  width: 60vw;
   padding: 3em;
   box-shadow: 0 1.2em 1em var(--clr-shadow);
   position: relative; 
@@ -90,12 +90,14 @@ body {
   background: var(--clr-primary);
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: transform 500ms ease-out;
 }
 .search_form:focus-within .search_submit:hover,
 .search_form:focus-within .search_submit:focus {
   outline: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
   transform: rotate(1turn);
+
+
 } 
 
 .hint {
