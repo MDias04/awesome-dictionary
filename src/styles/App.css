@@ -1,10 +1,10 @@
 /*Root will define my variables*/
 :root {
   --clr-primary: #ee6352;
-  --clr-hint: #b1b1b1;
+  --clr-hint: #f5f5f5;
 
   --clr-bg-dark: #212529;
-  --clr-bg-light: #dddddd;
+  --clr-bg-light: #b1b1b1;
 
   --clr-shadow: rgba(0, 0, 0, 0.15);
   font-size: 100%;
@@ -62,4 +62,30 @@ body {
   font-size: 1rem;
   font-style: italic;
   font-weight: 700;
+}
+
+
+/* DARK MODE / LIGHT MODE */
+
+[data-theme="light"] {
+  background: var(--clr-hint);
+  color: var(--clr-bg-dark);
+}
+
+
+.toggler {
+  margin: 20px 10px;
+  width: 10%;
+  display: block;
+  padding: 5px;
+  font-size: 2rem;
+  background: transparent;
+  border-radius: 20px;
+  border: 1 var(--clr-primary);
+  color: var(--clr-bg-light);
+  cursor: pointer;  
+}
+.toggler:hover{
+  color: var(--clr-primary);
+  opacity: 0.7;
 }

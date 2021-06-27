@@ -88,7 +88,7 @@ body {
 }
 .search_form:focus-within .search_submit {
   background: var(--clr-primary);
-  color: white;
+  color: var(--clr-light);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   transition: transform 500ms ease-out;
 }
@@ -101,7 +101,7 @@ body {
 
 .hint {
   margin-top: 2em;
-  color: var(--clr-hint);
+  color: var(--clr-dark);
   font-style: italic;
   letter-spacing: 1px;
 }

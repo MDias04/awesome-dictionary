@@ -1,0 +1,18 @@
+[data-theme="light"] {
+    background: var(--clr-bg-light);
+    color: var(--clr-bg-dark);
+}
+
+
+.toggler {
+    margin: 20px 10px;
+    width: 100px;
+    display: flex;
+    padding: 15px;
+    background: var(--clr-bg-dark);
+    display: block;
+    border-radius: 1000px;
+    cursor: pointer;
+    box-shadow: var(--clr-shadow);
+    transition: background-color 0.2s ease-in;
+}

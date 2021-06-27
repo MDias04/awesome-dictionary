@@ -6,7 +6,7 @@
 }
 
 .Meaning .example {
-  color: var(--clr-bg-light);
+  color: var(--clr-bg-hint);
   font-style: italic;
   margin-top: 10px;
 }
