@@ -97,6 +97,7 @@ body {
     outline: 0;
     transform: rotate(1turn);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+    
   }
 
 .hint {
