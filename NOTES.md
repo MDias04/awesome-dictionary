@@ -13,8 +13,12 @@
 
   - if(word-result exists) ? show results : prompt not available
 
-- style rest of the app [ONGOING]
-
   - Make search icon go right with the search bar > [DONE] [HOWEVER NOT WORKING]
 
   - Change audio icon [DONE]
+
+- style rest of the app [ONGOING]
+
+  - Light/Dark Mode [DONE]
+  - Light/Dark Mode Persists add (not sure if I want this);
+  - Change icon when on Light to moon (< FAMOON/>)

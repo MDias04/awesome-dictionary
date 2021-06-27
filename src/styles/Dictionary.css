@@ -59,7 +59,7 @@ body {
   opacity: 0;
   cursor: pointer;
 
-  color: var(--clr-bg-light);
+  color: var(--clr-bg-hint);
 }
 
 .search_submit {
@@ -73,7 +73,7 @@ body {
 
   width: calc(var(--size) - 10px);
   height: calc(var(--size) - 10px);
-  color: var(--clr-bg-light);
+  color: var(--clr-bg-hint);
 }
 
 .search_form:focus-within {
@@ -88,7 +88,7 @@ body {
 }
 .search_form:focus-within .search_submit {
   background: var(--clr-primary);
-  color: var(--clr-light);
+  color: var(--clr-bg-light);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   transition: transform 500ms ease-out;
 }
@@ -101,7 +101,7 @@ body {
 
 .hint {
   margin-top: 2em;
-  color: var(--clr-dark);
+  color: var(--clr-bg-hint);
   font-style: italic;
   letter-spacing: 1px;
 }

@@ -1,17 +1,17 @@
 /*Root will define my variables*/
 :root {
   --clr-primary: #ee6352;
-  --clr-hint: #f5f5f5;
+  --clr-hint: #b1b1b1;
 
   --clr-bg-dark: #212529;
-  --clr-bg-light: #b1b1b1;
+  --clr-bg-light: #f5f5f5;
 
   --clr-shadow: rgba(0, 0, 0, 0.15);
   font-size: 100%;
 }
 
 body {
-  background-color: var(--clr-bg-dark) !important;
+  background-color: var(--clr-bg-dark);
   color: var(--clr-bg-light);
   font-family: "Poppins", sans-serif;
 }
@@ -67,10 +67,16 @@ body {
 
 /* DARK MODE / LIGHT MODE */
 
-[data-theme="light"] {
-  background: var(--clr-hint);
-  color: var(--clr-bg-dark);
+[data-theme="dark"] {
+  background: var(--clr-bg-dark) !important;
+  color: var(--clr-bg-light) !important;
 }
+
+[data-theme="light"] {
+  background: var(--clr-bg-light) !important;
+  color: var(--clr-bg-dark) !important;
+}
+
 
 
 .toggler {
@@ -81,7 +87,7 @@ body {
   font-size: 2rem;
   background: transparent;
   border-radius: 20px;
-  border: 1 var(--clr-primary);
+  border: 0;
   color: var(--clr-bg-light);
   cursor: pointer;  
 }

@@ -12,7 +12,7 @@
 
   border-radius: 10px;
   border: 1px solid var(--clr-primary);
-  color: var(--clr-bg-light);
+  color: var(--clr-bg-hint);
 }
 
 .Phonetic a:hover {
