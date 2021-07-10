@@ -59,7 +59,7 @@ export default function Dictionary() {
       
      
       <div className="hint">
-        <strong>Suggested Words:</strong> Sunset, Apple ...
+        <strong>Suggested Words:</strong> Sunset, Rabbits...
       </div>
 
       <section className="results">

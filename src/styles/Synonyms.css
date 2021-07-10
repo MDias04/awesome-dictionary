@@ -7,8 +7,10 @@
 
 .Synonyms li {
   font-size: 1.2rem;
-  display: inline-block;
+
+  list-style: none;
+
   padding-right: 10px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
 }

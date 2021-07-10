@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Dictionary from "./Dictionary";
 
 import "./styles/App.css";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
 
 export default function App() {
 
